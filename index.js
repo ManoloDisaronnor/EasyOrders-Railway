@@ -1,4 +1,6 @@
-require("dotenv").config();
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV || 'development'}`
+});
 // Importar fichero de configuración con variables de entorno
 const config = require("./config/config");
 const path = require("path");
