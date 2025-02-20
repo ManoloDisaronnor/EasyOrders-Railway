@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: ballast.proxy.rlwy.net:19100
+      PMA_PORT: 19100
+      PMA_USER: root
+      PMA_PASSWORD: jqscUykzCNSHBdcyXSbDkrBMMEPAnozG

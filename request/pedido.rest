@@ -1,0 +1,36 @@
+GET http://localhost:3000/api/pedidos/
+
+###
+POST http://localhost:3000/api/pedidos/altapedido
+Content-Type: application/json
+
+{
+    "id_pedido": null,
+    "producto": "productoPedido",
+    "fecha_pedido": "2005-03-18",
+    "fecha_entrega": "2005-03-19",
+    "precio": 0,
+    "unidades": 2,
+    "estado": "Entregado",
+    "id_cliente": 1
+}
+
+###
+DELETE http://localhost:3000/api/pedidos/eliminarpedido/9999
+
+###
+PUT http://localhost:3000/api/pedidos/modificarpedido/5
+Content-Type: application/json
+
+{
+    "producto": "productoPedido",
+    "fecha_pedido": "2005-03-18",
+    "fecha_entrega": "2005-03-19",
+    "precio": 0,
+    "unidades": 2,
+    "estado": "Entregado",
+    "id_cliente": 1
+}
+
+###
+POST http://localhost:3000/api/pedidos/pedidoscliente/1

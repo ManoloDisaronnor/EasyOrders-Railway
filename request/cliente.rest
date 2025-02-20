@@ -1,0 +1,42 @@
+GET http://localhost:3000/api/clientes
+
+###
+POST http://localhost:3000/api/clientes/altacliente
+Content-Type: application/json
+
+{
+    "id_cliente": null,
+    "usuario": "PruebaUsuariao",
+    "nombre": "PruebaNombre",
+    "apellidos": "PruebaApellido",
+    "correo": "PruebaCorreoa",
+    "password": "PruebaPassword",
+    "telefono": 602242760,
+    "imagen": "",
+    "direccion": "PruebaDireccion",
+    "sexo": "N"
+}
+
+###
+DELETE http://localhost:3000/api/clientes/eliminarcliente/5
+
+###
+PUT http://localhost:3000/api/clientes/modificarcliente/2
+Content-Type: application/json
+
+{
+    "usuario": "jconpon219",
+    "nombre": "Manoli",
+    "apellidos": "Santita",
+    "correo": "jconpon219@hnosmachado.org",
+    "telefono": 742251860,
+    "imagen": "",
+    "direccion": "Calle Guipuzcua 11",
+    "sexo": "M"
+}
+
+###
+GET http://localhost:3000/api/clientes/clientespedido
+
+###
+POST http://localhost:3000/api/clientes/buscarcliente/xmsanmar318v
