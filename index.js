@@ -6,8 +6,6 @@ const config = require("./config/config");
 const path = require("path");
 // Importar librería express --> web server
 const express = require("express");
-// Importar libreria CORS
-const cors = require("cors");
 // Importar gestores de rutas
 const clienteRoutes = require("./routes/clienteRoutes");
 const pedidoRoutes = require("./routes/pedidoRoutes");
@@ -32,6 +30,6 @@ if (process.env.NODE_ENV !== "test") {
     });
 }
 
-console.log("prueba commit")
+console.log("prueba commit");
 
 module.exports = app;
