@@ -8,21 +8,21 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     usuario: {
-      type: DataTypes.STRING(255),
-      allowNull: true,
+      type: DataTypes.STRING(50),
+      allowNull: false,
       unique: "UK_Cliente_usuario"
     },
     nombre: {
-      type: DataTypes.STRING(255),
-      allowNull: true
+      type: DataTypes.STRING(50),
+      allowNull: false
     },
     apellidos: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING(100),
       allowNull: true
     },
     correo: {
-      type: DataTypes.STRING(255),
-      allowNull: true,
+      type: DataTypes.STRING(150),
+      allowNull: false,
       unique: "UK_Cliente_correo"
     },
     password: {
@@ -39,12 +39,12 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     direccion: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING(150),
       allowNull: true
     },
     sexo: {
       type: DataTypes.ENUM('H','M','N'),
-      allowNull: true
+      allowNull: false
     }
   }, {
     sequelize,
@@ -57,14 +57,6 @@ module.exports = function(sequelize, DataTypes) {
         using: "BTREE",
         fields: [
           { name: "id_cliente" },
-        ]
-      },
-      {
-        name: "UK_Cliente_telefono",
-        unique: true,
-        using: "BTREE",
-        fields: [
-          { name: "telefono" },
         ]
       },
       {
@@ -81,6 +73,14 @@ module.exports = function(sequelize, DataTypes) {
         using: "BTREE",
         fields: [
           { name: "correo" },
+        ]
+      },
+      {
+        name: "UK_Cliente_telefono",
+        unique: true,
+        using: "BTREE",
+        fields: [
+          { name: "telefono" },
         ]
       },
     ]

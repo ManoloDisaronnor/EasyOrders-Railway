@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/api/pedidos/eliminarpedido/9999
+DELETE http://localhost:3000/api/pedidos/eliminarpedido/1
 
 ###
 PUT http://localhost:3000/api/pedidos/modificarpedido/5

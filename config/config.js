@@ -12,3 +12,10 @@ module.exports = {
     port: process.env.DB_PORT || 3306,
   }
 };
+
+console.log("HOST: ", process.env.DB_HOST);
+console.log("USER: ", process.env.DB_USER);
+console.log("PASSWORD: ", process.env.DB_PASSWORD);
+console.log("NAME: ", process.env.DB_NAME);
+console.log("PORT: ", process.env.DB_PORT);
+console.log("PORT: ", process.env.PORT);
