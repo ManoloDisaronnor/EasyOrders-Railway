@@ -32,4 +32,6 @@ if (process.env.NODE_ENV !== "test") {
     });
 }
 
+console.log("prueba commit")
+
 module.exports = app;
