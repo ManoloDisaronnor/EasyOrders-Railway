@@ -10,7 +10,6 @@ const { Op } = require("sequelize");
 
 const models = initModels(sequelize);
 const Cliente = models.cliente;
-const Pedido = models.pedido;
 
 class ClienteController {
     async getAllClientes(req, res) {
